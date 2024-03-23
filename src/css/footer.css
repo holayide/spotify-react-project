@@ -1,0 +1,104 @@
+@font-face {
+  font-family: helBold;
+  src: url(../Helvetica-fonts/H-Bold.ttf);
+}
+
+@font-face {
+  font-family: helLight;
+  src: url(../Helvetica-fonts/h-light.ttf);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 5rem var(--general-space) 3rem;
+}
+
+.foot-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8%;
+}
+
+.top-right {
+  display: flex;
+  justify-content: space-between;
+  width: 70%; /* changeeeeeeeee */
+}
+
+.top-right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 1rem;
+}
+
+.top-right ul li {
+  list-style: none;
+  font-family: helLight;
+}
+
+.list-head {
+  color: #919496;
+  font-size: 0.75rem;
+  font-family: helBold;
+  text-transform: uppercase;
+}
+
+.about ul li:first-child {
+  color: black;
+}
+
+.logo {
+  display: flex;
+  gap: 15px;
+}
+
+.logo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #222326;
+}
+
+.useful-links,
+.logo {
+  padding-top: 15px;
+}
+
+.foot-bottom {
+  color: #919496;
+  font-size: 11px;
+}
+
+.world {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copy ul {
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+@media (min-width: 1162px) {
+  /* .footer {
+    background-color: pink;
+  } */
+
+  .top-right {
+    width: 60%;
+  }
+}

@@ -1,0 +1,297 @@
+@font-face {
+  font-family: helBold;
+  src: url(../Helvetica-fonts/H-Bold.ttf);
+}
+
+@font-face {
+  font-family: helLight;
+  src: url(../Helvetica-fonts/h-light.ttf);
+}
+
+:root {
+  --blue: #1d75de;
+  --white: #ffff;
+  --off-white: #d9dadc;
+  --general-space: 6rem;
+}
+
+/* header */
+.head-wrapper {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem var(--general-space);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.list-items {
+  display: inline-block;
+}
+
+.list-items a {
+  text-decoration: none;
+  font-family: helBold;
+}
+
+/* Hero-page */
+.hero-page {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.hero-page h3 {
+  font-size: 39px;
+  font-family: helBold;
+}
+
+.hero-page .info {
+  font-size: 24px;
+  padding: 36px 0 4px;
+  font-family: helLight;
+  color: rgb(255, 255, 255, 0.9);
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 0;
+}
+
+.btn,
+.btn-primary,
+.btn-secondary,
+.btn-white {
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 500px;
+  font-size: 13px;
+  font-family: helBold;
+  background-color: black;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn-secondary {
+  width: 100%;
+  background-color: #191414;
+  margin-top: 10px;
+}
+
+.btn-white {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+}
+
+.terms {
+  font-size: 12px;
+  font-family: helLight;
+  color: rgb(255, 255, 255, 0.7);
+  padding-top: 1rem;
+}
+
+.terms span {
+  text-decoration: underline;
+}
+
+/* Spotify Premium */
+.spotify-premium {
+  margin: 72px var(--general-space) 70px;
+  padding: 0 2px;
+}
+
+.spotify-premium > h1 {
+  text-align: center;
+  padding-bottom: 62px;
+  font-family: helBold;
+  font-size: 39px;
+  line-height: 46px;
+}
+
+.options {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 3%;
+}
+
+.option {
+  width: 285px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.premium-para > h3 {
+  padding: 1rem 0;
+  font-family: helBold;
+  font-size: 20px;
+}
+
+.premium-para > p {
+  font-family: helLight;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+/* Preminum Options */
+.premium-options {
+  padding: 0 var(--general-space) 2rem;
+  text-align: center;
+  background-color: #efefef;
+}
+
+.premium-options h2 {
+  padding-top: 52px;
+  font-family: helBold;
+  font-size: 38px;
+}
+
+.premium-options > p:first-of-type {
+  font-family: helLight;
+  font-size: 1rem;
+  padding: 5px 0 10px;
+}
+
+.premium-options .devices {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.premium-options .cards {
+  margin: 72px 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
+
+.premium-options .cards .card {
+  width: 269px;
+  height: 578px; /* changeeeeeeeeeeee */
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px 0px #0000004d;
+  text-align: start;
+}
+
+.premium-options .cards .card .inner-card {
+  padding: 15px 15px 0;
+}
+
+.premium-options .cards .free {
+  display: inline-flex;
+  border: 1px solid transparent;
+  background-color: #0d72ea;
+  color: white;
+  font-size: 0.9rem;
+  font-family: helBold;
+  padding: 5px 11.08px 6px 8px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.premium-options .cards .card div p:first-of-type {
+  display: inline-flex;
+  font-family: helBold;
+  padding: 6px 8.23px 6px 9px;
+  border-radius: 4px;
+  border: 1px solid #0d72ea;
+  color: #0d72ea;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+}
+
+.premium-options .card h4 {
+  font-family: helBold;
+  padding: 3px 0;
+  font-size: 1.5rem;
+}
+
+.premium-options .cards .card .days {
+  font-family: helLight;
+  font-size: 1rem;
+}
+
+.premium-options .card .days:last-of-type {
+  padding: 5px 0 20px;
+}
+
+.premium-options .cards .card .other-line,
+.premium-options .cards .card .line {
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
+}
+
+.premium-options .cards .card .line {
+  margin-top: 30px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.premium-options ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: 220px;
+}
+
+.premium-options ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-family: helLight;
+}
+
+.hr-line {
+  border: 2px solid #ddd;
+  box-shadow: -5px 10px 12px #ddd;
+}
+
+.card .foot .content {
+  padding: 15px;
+  color: #535353;
+  font-size: 12px;
+  line-height: 1rem;
+}
+
+.card .foot a {
+  color: #535353;
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.special {
+  display: inline-block;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px #0000004d;
+  border-radius: 10px;
+}
+
+.special-discount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.44rem;
+  font-family: helBold;
+  padding: 10px;
+}
