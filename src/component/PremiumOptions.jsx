@@ -90,9 +90,12 @@ function Cards({ free, title, price, acct, lists }) {
     <div className="card">
       <div className="inner-card">
         <div className="header-card">
-          <div className={free ? null : "free"}>
-            {free ? null : "1 month free"}
+          <div>
+            <div className={free ? null : "free"}>
+              {free ? null : "1 month free"}
+            </div>
           </div>
+
           <div className="plans">
             <p>One-time plans available</p>
           </div>
