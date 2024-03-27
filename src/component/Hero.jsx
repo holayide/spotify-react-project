@@ -22,7 +22,15 @@ export function HeroPage() {
   );
 }
 
-export function Buttons({ type, children }) {
+export function Buttons({ type, login, disabled, children }) {
   const types = type;
-  return <button className={types ? types : "btn"}>{children}</button>;
+  return (
+    <button
+      disabled={disabled}
+      className={types ? types : "btn"}
+      onClick={login}
+    >
+      {children}
+    </button>
+  );
 }
