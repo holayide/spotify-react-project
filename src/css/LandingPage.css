@@ -207,7 +207,7 @@
 
 .premium-options .cards .free,
 .premium-options .cards .card .plans p {
-  display: inline-flex;
+  display: inline-block;
   font-family: helBold;
   border-radius: 4px;
 }
