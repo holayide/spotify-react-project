@@ -89,16 +89,18 @@ function Cards({ free, title, price, acct, lists }) {
   return (
     <div className="card">
       <div className="inner-card">
-        <div className={free ? null : "free"}>
-          {free ? null : "1 month free"}
+        <div className="header-card">
+          <div className={free ? null : "free"}>
+            {free ? null : "1 month free"}
+          </div>
+          <div className="plans">
+            <p>One-time plans available</p>
+          </div>
+          <h4>{title}</h4>
+          <p className="days">{price}</p>
+          <p className="days">{acct}</p>
         </div>
-        <div>
-          <p>One-time plans available</p>
-        </div>
-        <h4>{title}</h4>
-        <p className="days">{price}</p>
-        <p className="days">{acct}</p>
-        <hr className={free ? "line" : "other-line"} />
+
         <div className="list">
           <ul>
             {lists.map((list) => (
@@ -110,7 +112,9 @@ function Cards({ free, title, price, acct, lists }) {
               </>
             ))}
           </ul>
-          <Buttons type="btn-secondary">View Plans</Buttons>
+          <div className="btn-view">
+            <Buttons type="btn-secondary">View Plans</Buttons>
+          </div>
         </div>
       </div>
 
